@@ -1,13 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-// import logo from './logo.svg';
-import './style/App.css';
+
+import Clock from './Clock/Clock';
+import AppLink from './AppLink/AppLink';
 
 function App() {
   return (
     <Router>
       <div>
-
+        <Clock />
+        <AppLink />
         <Header />
 
         <Route path="/" exact component={Index} />
